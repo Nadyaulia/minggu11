@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>belajar switch/case</title> 
+</head> 
+<body> 
+    <script> 
+ 
+        var jawab = prompt("Selamat kamu menang undian lomba agustusan. Silahkan pilih hadiahmu dengan memasukan angka 1 sampai 4 "); 
+        var hadiah = ""; 
+         
+        switch(jawab){ 
+            case "1": 
+                hadiah = "Deterjen"; 
+                break; 
+            case "2": 
+                hadiah = "Sabun Cuci Piring"; 
+                break; 
+            case "3": 
+                hadiah = "Sabun Mandi"; 
+                break; 
+            case "4": 
+                hadiah = "Voucher belanja 30ribu"; 
+                break; 
+ 
+            default: 
+                document.write("<p> Maaf tidak ada pilihan itu</p>"); 
+        } 
+ 
+        if(hadiah === ""){ 
+            document.write("<p>Kamu kurang beruntung </p>"); 
+        } else { 
+            document.write("<h2>Selamat kamu mendapatkan " + hadiah +"</h2>"); 
+        } 
+    </script> 
+</body> 
+</html>
